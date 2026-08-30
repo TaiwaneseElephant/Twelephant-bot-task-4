@@ -9,7 +9,7 @@ def main(times):
           'style="border-top: 2px solid var(--border-color-base, #a2a9b1); border-bottom: 2px solid var(--border-color-base, #a2a9b1); ', \
                      page.text)
     t += 1
-    page.save(summary=("[[User:Twelephant-bot/task/4|Task 4]]：清理#spoiler，第%d筆編輯" % t), minor=True, bot=True)
+    page.save(summary=("[[User:Twelephant-bot/task/4|Task 4]]：清理#spoiler，第%d筆修改" % t), minor=True, bot=True)
     if t == times:
       break
     time.sleep(10)

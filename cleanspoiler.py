@@ -11,7 +11,7 @@ def main(times):
     if newtext != page.text:
       page.text = newtext
       t += 1
-      page.save(summary=("[[User:Twelephant-bot/task/4|Task 4]]：清理#spoiler，第%d筆修改" % t), minor=True, bot=True)
+      page.save(summary=("[[User:Twelephant-bot/task/4|Task 4]]：清理#spoiler"), minor=True, bot=True)
       if t == times:
         break
     time.sleep(10)
